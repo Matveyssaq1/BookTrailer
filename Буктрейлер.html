@@ -8,31 +8,31 @@
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             background-color: #f5deb3; /* Светло-коричневый цвет */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 60px 20px;
         }
-        
+
         h1 {
             text-align: center;
         }
-        
+
         video {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px 0 0 0 ;
             width: 700px; /* Увеличение размера видео */
         }
-        
+
         .container {
             position: relative;
             padding: 20px 320px 0 0; /* Оставляем место для блока команды */
         }
-        
+
         .team-block {
             position: absolute; /* Абсолютное позиционирование */
             top: 20px;          /* Верхний отступ */
@@ -40,17 +40,24 @@
             padding: 10px;
             background-color: white;
             border: 1px solid #ccc;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 2px 20px 5px rgba(0, 0, 0, 0.15);
             max-width: 300px;
         }
-        
-        .reviews-container {
+
+        .book-info, .review{
             max-width: 800px;
-            margin: 160px auto 0; /* Увеличение отступа до отзывов */
-            overflow: hidden;
-            position: relative;
+            margin: 20px 0 0 0; /* Центрирование и отступ сверху */
+            padding-left: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 20px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
         }
-        
+
+        .reviews-container {
+            padding: 20px; /* Добавление отступа внутри контейнера с отзывами */
+        }
+
         .review {
             background-color: white;
             border: 1px solid #ccc;
@@ -59,18 +66,18 @@
             margin-top: 40px; /* Увеличение отступа между отзывами */
             border-radius: 10px;
         }
-        
+
         .review-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
         }
-        
+
         .rating {
             color: gold;
         }
-        
+
         .review-author {
             font-weight: bold;
         }
@@ -91,12 +98,19 @@
         <div class="team-block">
             <h3>Состав команды:</h3>
             <ul>
-                <li>Режиссер: Иван Иванов</li>
-                <li>Сценарист: Мария Петрова</li>
-                <li>Оператор: Сергей Сидоров</li>
-                <li>Монтажер: Ольга Васильева</li>
+                <li>Сайт: Матвей Новиков</li>
+                <li>Сценарист: Катя Докичева</li>
+                <li>Озвучка: Зоя Чубий</li>
+                <li>Монтажер: Даня Климашевский</li>
             </ul>
         </div>
+    </div>
+    
+    <!-- Информация о книге -->
+    <div class="book-info">
+        <h3>Краткая информация о книге</h3>
+        <p>«Мастер и Маргарита» – культовый роман Михаила Булгакова, впервые опубликованный в 1966 году. Роман сочетает в себе элементы мистики, сатиры и философии, рассказывая историю о приезде Сатаны в Москву 1930-х годов.</p>
+        <p>Сюжет вращается вокруг двух основных линий: история любви Мастера и Маргариты, а также визит Воланда (Сатаны) и его свиты в совет...</p>
     </div>
     
     <!-- Отзывы -->
@@ -123,5 +137,4 @@
             <p>Замечательный буктрейлер, но немного коротковат.</p>
         </div>
     </div>
-</body>
-</html>
+    
