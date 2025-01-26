@@ -3,53 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Видео на странице</title>
+    <title>Мастер и Маргарита</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
             background-color: #f5deb3; /* Светло-коричневый цвет */
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 60px 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            width: 700px; /* Увеличение размера видео */
+        }
+        
+        .container {
+            position: relative;
+            padding: 20px 320px 0 0; /* Оставляем место для блока команды */
         }
         
         .team-block {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            position: absolute; /* Абсолютное позиционирование */
+            top: 20px;          /* Верхний отступ */
+            right: 20px;        /* Правый отступ */
             padding: 10px;
             background-color: white;
             border: 1px solid #ccc;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
-            max-width: 200px;
+            max-width: 300px;
         }
         
-        h1 {
-            margin-top: 50px;
-            text-align: center;
+        .reviews-container {
+            max-width: 800px;
+            margin: 160px auto 0; /* Увеличение отступа до отзывов */
+            overflow: hidden;
+            position: relative;
         }
         
-        p {
-            margin-bottom: 30px;
+        .review {
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            margin-top: 40px; /* Увеличение отступа между отзывами */
+            border-radius: 10px;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .rating {
+            color: gold;
+        }
+        
+        .review-author {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="team-block">
-        <h2 style="margin-top: 0;">Состав команды:</h2>
-        <ul>
-            <li>Иван Иванов</li>
-            <li>Мария Петрова</li>
-            <li>Сергей Сидоров</li>
-            <li>Ольга Васильева</li>
-        </ul>
-    </div>
-
-    <h1>Посмотрите это видео!</h1>
+    <h1>Буктрейлер "Мастер и Маргарита"</h1>
     
-    <!-- Видео -->
-    <video width="640" height="360" controls>
-        <source src="video.mp4" type="video/mp4">
-        Ваш браузер не поддерживает тег video.
-    </video>
-
-    <p>Если видео не воспроизводится, попробуйте обновить страницу.</p>
+    <!-- Контейнер для видео и блока команды -->
+    <div class="container">
+        <!-- Видео -->
+        <video controls>
+            <source src="buktrailer.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+        
+        <!-- Блок команды -->
+        <div class="team-block">
+            <h3>Состав команды:</h3>
+            <ul>
+                <li>Режиссер: Иван Иванов</li>
+                <li>Сценарист: Мария Петрова</li>
+                <li>Оператор: Сергей Сидоров</li>
+                <li>Монтажер: Ольга Васильева</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Отзывы -->
+    <div class="reviews-container">
+        <div class="review">
+            <div class="review-header">
+                <span class="review-author">Алексей Петров</span>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <p>Отличный буктрейлер! Очень атмосферно и захватывающе.</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="review-author">Анна Смирнова</span>
+                <span class="rating">★★★★★</span>
+            </div>
+            <p>Прекрасная работа! Буктрейлер полностью передает дух книги.</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="review-author">Дмитрий Кузнецов</span>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <p>Замечательный буктрейлер, но немного коротковат.</p>
+        </div>
+    </div>
 </body>
 </html>
