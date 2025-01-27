@@ -82,32 +82,31 @@
             font-weight: bold;
         }
         .information{
-            white-space: nowrap;
+            
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+        .header{
+            color:rgb(234, 208, 11);
         }
     </style>
 </head>
 <body>
-    <h1>Буктрейлер "Мастер и Маргарита"</h1>
+    <div class = header>
+        <h1>Буктрейлер "Мастер и Маргарита"</h1>
+    </div>
     <div class = "information">
         <p><b>Год</b>:2025</p> 
-        
-        
-    </div>
-    <div class = "information">
         <p><b>Иви</b>:9.7</p>
-    </div>
-    <div class = "information">
         <p><b>Кинопоиск</b>:9.8</p>
     </div>
+    
 
 
     <!-- Контейнер для видео и блока команды -->
     <div class="container">
         <!-- Видео -->
-        <video controls>
-            <source src="buktrailer.mp4" type="video/mp4">
-            Ваш браузер не поддерживает тег video.
-        </video>
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=818690347&id=456239019&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
         
         <!-- Блок команды -->
         <div class="team-block">
@@ -115,7 +114,7 @@
             <ul>
                 <li>Сайт: Матвей Новиков</li>
                 <li>Сценарист: Катя Докичева</li>
-                <li>Озвучка: Зоя Чубий</li>
+                <li>Монтажер: Зоя Чубий</li>
                 <li>Монтажер: Даня Климашевский</li>
             </ul>
         </div>
@@ -153,4 +152,3 @@
         </div>
     </div>
     
-
